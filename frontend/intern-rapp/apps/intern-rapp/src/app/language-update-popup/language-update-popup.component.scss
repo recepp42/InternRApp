@@ -1,0 +1,36 @@
+.heading{
+    margin-left: 1%;
+    margin-top: 2%;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  .flex-row{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+  
+  span{
+    margin-left: 5%;
+  }
+  button{
+    border: none;
+  }
+  .example-chip-list {
+    width: 100%;
+  }
+ 
+  
+  

@@ -1,0 +1,20 @@
+<div  *ngIf="(result$|async) as pagedItems">
+  
+  <intern-rapp-filter *ngIf="filters"
+  [filters]="filters"
+  (filtered)="filterList($event)"
+  >
+  </intern-rapp-filter>
+<ng-container *ngIf="listTmplWrapper"> 
+
+  <ng-container *ngTemplateOutlet="listTmplWrapper.templateRef; context: { $implicit: pagedItems.items}" >
+<div>{{pagedItems.items}}</div>
+</ng-container> </ng-container>
+
+<mat-paginator (page)="updatePaging($event)"  [pageSizeOptions]="[5, 10, 15, 20]" aria-label="Select page " [length]="pagedItems.totalCount"
+[pageSize]="10"></mat-paginator>  
+</div>
+
+
+
+

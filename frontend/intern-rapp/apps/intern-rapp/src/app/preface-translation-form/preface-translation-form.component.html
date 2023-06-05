@@ -1,0 +1,26 @@
+<form *ngIf="unitPrefaceTranslationForm" [formGroup]="unitPrefaceTranslationForm">
+<div class="editor">
+    <div>
+        <mat-label class="editor-label"> {{'descriptionLabel'|translate}}</mat-label>
+
+    </div>
+    <div>
+        <angular-editor formControlName="content" [config]="editorConfig"></angular-editor>
+
+
+
+        <div>
+            <mat-error *ngIf="unitPrefaceTranslationForm.controls['content'].hasError('Required')"
+                >
+                {{'descriptionLabelErrorMessage' |translate}}
+            </mat-error>
+        </div>
+    </div>
+
+</div>
+    
+
+
+
+
+</form>

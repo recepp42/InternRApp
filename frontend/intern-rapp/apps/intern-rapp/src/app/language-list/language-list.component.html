@@ -1,0 +1,90 @@
+
+
+<intern-rapp-baselist
+[result$]="listData$"
+[filters]="filters"
+(filtered)="filterUpdating($event)"
+(pagingUpdated)="pagingUpdated($event)"
+>
+
+<ng-template
+internRappItemsTmpl let-items
+>
+<!-- <div class="flex-row-above-list ">
+  <div >
+    <button (click)="addLanguage()" class="align-right save-button-above-list">
+      <mat-icon>add</mat-icon>
+    </button>
+    <div>{{'addButton'|translate}}</div> -->
+  <!-- </div> -->
+    <!-- <div >
+      <button *ngIf="authService.currentUser.role===0" mat-icon-button (click)="delete()" class="cancel-button" mat-fab color="primary"
+        aria-label="Example icon button with a delete icon">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </div>
+    </div> -->
+  <!-- <mat-list >
+  <div class="flex-row-columns">
+    <div style="margin-left: 2%;">{{'languageCodeLabel'|translate}}</div>
+    <div style="margin-right: 4%;">{{'languageNameLabel'|translate}}</div>
+  </div>
+    <mat-list-item  *ngFor="let item of items">
+      <div class="flex-row" >
+          <div>
+            <mat-checkbox (change)="addToSelectedLanguages($event.checked,item.id)"></mat-checkbox>
+          </div>
+        <div >{{item.code}}</div>
+        <div>{{item.name}}</div>
+        <div class="flex-end">
+          <div class="flex-row ">
+
+            <div *ngIf="authService.currentUser.role===0||authService.currentUser.id===item.creatorId">
+              <button (click)="updateLanguage(item)" class="save-button" color="primary" mat-fab color="primary" aria-label="Example icon button with a delete icon">
+                <mat-icon>edit</mat-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <mat-divider></mat-divider>
+      </div>
+    </mat-list-item>
+  </mat-list> -->
+
+
+
+
+
+<table *ngIf="items.length>0">
+<thead>
+  <th></th>
+  <th >{{'languageCodeLabel'|translate}}</th>
+  <th>{{'languageNameLabel'|translate}}</th>
+  <th></th>
+</thead>
+<tr *ngFor="let item of items">
+<td>
+ <mat-checkbox (change)="addToSelectedLanguages($event.checked,item.id)"></mat-checkbox>
+</td>
+  <td>
+ {{item.code}}
+</td>
+<td>
+ {{item.name}}
+</td>
+<td>
+  <div *ngIf="authService.currentUser.role===0||authService.currentUser.id===item.creatorId">
+             <button (click)="updateLanguage(item)" class="save-button" color="primary" mat-fab color="primary" aria-label="Example icon button with a delete icon">
+                <mat-icon>edit</mat-icon>
+              </button>
+            </div>
+</td>
+</tr>
+</table>
+
+</ng-template>
+
+</intern-rapp-baselist>

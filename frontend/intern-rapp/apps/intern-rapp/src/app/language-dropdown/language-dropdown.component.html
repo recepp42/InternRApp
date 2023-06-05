@@ -1,0 +1,14 @@
+<form *ngIf="dropDownForm" [formGroup]="dropDownForm">
+<mat-form-field  appearance="fill">
+    <mat-label>{{'languageLabel' |translate}}</mat-label>
+    <mat-select   formControlName="language"  [value]="translateService.currentLang">
+      <mat-option (onSelectionChange)="languageChanged($event)"   *ngFor="let language of availableLanguages" value="{{language}}" >
+        {{language|translate}} 
+       
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</form>
+
+
+  

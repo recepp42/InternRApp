@@ -1,0 +1,110 @@
+
+<intern-rapp-baselist
+[result$]="listData$"
+[filters]="filters"
+(filtered)="filterUpdating($event)"
+(pagingUpdated)="pagingUpdated($event)"
+>
+
+<ng-template
+internRappItemsTmpl let-items
+>
+<div class="flex-row-above-list">
+  <div>
+<button mat-icon-button (click)="addLocation()" >
+
+  <mat-icon>add</mat-icon>
+  
+ </button>
+  </div>
+  <div>
+      <button *ngIf="authService.currentUser.role===0" (click)="delete()" class="cancel-button" mat-fab color="primary"
+        aria-label="Example icon button with a delete icon">
+        <mat-icon>delete</mat-icon>
+      </button>
+  </div>
+</div>
+
+    <!-- <div>
+
+    </div>  -->
+
+  <!-- <mat-list >
+    <div class="flex-row-columns">
+      <div style="margin-left: 3%;">{{'locationCityLabel'|translate}}</div>
+      <div style="margin-left: 1.5%;">{{'locationZipCodeLabel'|translate}}</div>
+      <div style="margin-left: 1.5%;">{{'locationStreetNameLabel'|translate}}</div>
+      <div style="margin-right: 2.5%;">{{'locationHouseNumberLabel'|translate}}</div>
+    </div>
+    <mat-list-item  *ngFor="let item of items">
+      <div class="flex-row" >
+          <div>
+            <mat-checkbox (change)="addToSelectedLocations($event.checked,item.id)"></mat-checkbox>
+          </div>
+        <div class="flex-begin">{{item.city}}</div>
+        <div class="flex-begin">{{item.zipcode}}</div>
+        <div class="flex-begin">{{item.streetname}}</div>
+        <div class="flex-begin">{{item.housenumber}}</div>
+        <div class="flex-end">
+          <div class="flex-row ">
+
+            <div *ngIf="authService.currentUser.role===0||authService.currentUser.id===item.creatorId">
+              <button (click)="updateLocation(item)" class="save-button" color="primary" mat-fab color="primary" aria-label="Example icon button with a delete icon">
+                <mat-icon>edit</mat-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <mat-divider></mat-divider>
+      </div>
+    </mat-list-item>
+  </mat-list> -->
+
+
+
+
+
+
+<table *ngIf="items.length>0">
+<thead>
+  <th></th>
+
+  <th >{{'locationCityLabel'|translate}}</th>
+  <th>{{'locationZipCodeLabel'|translate}}</th>
+  <th>{{'locationStreetNameLabel'|translate}}</th>
+  <th>{{'locationHouseNumberLabel'|translate}}</th>
+  <th></th>
+</thead>
+<tr *ngFor="let item of items">
+<td>
+ <mat-checkbox (change)="addToSelectedLocations($event.checked,item.id)"></mat-checkbox>
+</td>
+  <td>
+ {{item.city}}
+</td>
+<td>
+ {{item.zipcode}}
+</td>
+<td>
+ {{item.streetname}}
+</td>
+<td>
+  {{item.housenumber}}
+</td>
+<td>
+  <div *ngIf="authService.currentUser.role===0||authService.currentUser.id===item.creatorId">
+                <button (click)="updateLocation(item)" class="save-button" color="primary" mat-fab color="primary" aria-label="Example icon button with a delete icon">
+                <mat-icon>edit</mat-icon>
+              </button>
+            </div>
+</td>
+</tr>
+</table>
+
+
+</ng-template>
+
+</intern-rapp-baselist>

@@ -1,0 +1,33 @@
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: auto;
+}
+
+.title-content{
+  margin-top: 2%;
+  width: 50%;
+ 
+}
+.editor{
+  margin-left: 5%;
+  margin-top: 5%;
+
+}
+.editor-label{
+  justify-content: left;
+  align-items: left;
+  margin-right: 15%;
+}
+.flex-row{
+  display: flex;
+  flex-direction:row;
+  gap: 30px;
+}
+mat-label{
+  font-weight: bold;
+  
+}

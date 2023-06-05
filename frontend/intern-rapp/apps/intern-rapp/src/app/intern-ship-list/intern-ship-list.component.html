@@ -1,0 +1,126 @@
+
+<intern-rapp-baselist
+[result$]="listData$"
+[filters]="filters"
+(filtered)="filterUpdating($event)"
+(pagingUpdated)="pagingUpdated($event)"
+>
+
+<ng-template
+internRappItemsTmpl let-items
+>
+
+
+    <div class="buttons-above-list">
+    <div class="align-right save-button-above-list">
+  <button mat-icon-button (click)="addInternship()" >
+    <mat-icon>add</mat-icon>
+  </button>
+    </div>
+
+<div >
+  <button mat-icon-button (click)="copyInternship()">
+  <mat-icon>file_copy</mat-icon>
+  </button>
+</div>
+<div>
+  <button mat-icon-button (click)="exportButtonHandler()">
+    <mat-icon>save_alt</mat-icon>
+  </button>
+</div>
+  <div *ngIf="authService.currentUser.role===0">
+    <button mat-icon-button (click)="delete()" class="cancel-button" mat-fab color="primary">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </div>
+</div >
+
+
+
+  <!-- <mat-list >
+<div class="flex-row-columns">
+  <div class="internship-name">{{'internshipNameColumnLabel'|translate}}</div>
+  <div>{{'FreeUsedPlacesLabel'|translate}}</div>
+  <div class="unit-name">{{'department'|translate}}</div>
+</div>
+    <mat-list-item  *ngFor="let item of items">
+      <div class="flex-row" >
+        <div>
+          <mat-checkbox (change)="addToSelectedInternships($event.checked,item.id)"></mat-checkbox>
+        </div>
+        <div>{{item.title}}</div>
+        <div class="flex-begin">
+          <span class="material-symbols-outlined" style="color:red" *ngFor="let takenPlace of [].constructor(item.currentCountOfStudents)">
+            person
+            </span>
+            <span class="material-symbols-outlined" style="color:green" *ngFor="let availablePlace of [].constructor(item.maxStudents-item.currentCountOfStudents)">
+              person
+              </span>
+        </div>
+        <div class="flex-begin">
+            {{item.unitName}}
+
+          </div>
+
+
+        <div class="flex-end">
+          <div class="flex-row ">
+
+            <div *ngIf="authService.currentUser.role===0||authService.currentUser.id===item.creatorId">
+              <button  mat-icon-button  (click)="updateInternship(item.id)">
+                <mat-icon>edit</mat-icon>
+            </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div >
+        <mat-divider></mat-divider>
+      </div>
+    </mat-list-item>
+  </mat-list> -->
+
+
+
+<table *ngIf="items.length>0">
+<thead>
+  <th></th>
+
+  <th class="internship-name">{{'internshipNameColumnLabel'|translate}}</th>
+  <th>{{'FreeUsedPlacesLabel'|translate}}</th>
+  <th>{{'department'|translate}}</th>
+  <th></th>
+</thead>
+<tr *ngFor="let item of items">
+<td>
+ <mat-checkbox (change)="addToSelectedInternships($event.checked,item.id)"></mat-checkbox>
+</td>
+  <td>
+  {{item.title}}
+</td>
+<td>
+   <span class="material-symbols-outlined" style="color:red" *ngFor="let takenPlace of [].constructor(item.currentCountOfStudents)">
+            person
+            </span>
+            <span class="material-symbols-outlined" style="color:green" *ngFor="let availablePlace of [].constructor(item.maxStudents-item.currentCountOfStudents)">
+              person
+              </span>
+</td>
+<td>
+  {{item.unitName}}
+</td>
+<td>
+  <div *ngIf="authService.currentUser.role===0||authService.currentUser.id===item.creatorId">
+              <button  mat-icon-button  (click)="updateInternship(item.id)">
+                <mat-icon>edit</mat-icon>
+            </button>
+            </div>
+</td>
+</tr>
+</table>
+
+
+</ng-template>
+
+</intern-rapp-baselist>

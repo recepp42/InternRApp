@@ -1,0 +1,37 @@
+<div class="login-form-flex">
+    <mat-card>
+        <mat-card-title >
+            <div style="padding: 15px;">
+                Login
+            </div>
+        </mat-card-title>
+        <mat-card-content>
+            <form *ngIf="loginForm" [formGroup]="loginForm">
+            <mat-form-field>
+                <mat-label>{{'emailLabel'|translate}}</mat-label>
+                <input formControlName="email" matInput >
+                <mat-error></mat-error>
+            </mat-form-field>
+            <br />
+            <mat-form-field>
+                <mat-label>{{'passwordLabel'|translate}}</mat-label>
+                <input formControlName="password" type="password" matInput  />
+                <mat-error></mat-error>
+            </mat-form-field>
+        </form>
+        </mat-card-content>
+        <mat-card-actions>
+            <div class="button-flex-container">
+                <button (click)="login()" [disabled]="loginForm?.invalid" mat-raised-button color="primary">Login</button>
+            </div>
+            <div class="button-flex-container">
+                <button (click)="register()"  mat-raised-button color="primary">Register</button>
+
+            </div>
+        </mat-card-actions>
+        
+    </mat-card>
+    
+</div>
+
+

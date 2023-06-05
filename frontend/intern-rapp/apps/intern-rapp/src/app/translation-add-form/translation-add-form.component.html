@@ -1,0 +1,112 @@
+<form  *ngIf="internshipTranslationForm" [formGroup]="internshipTranslationForm" >
+    <div class="flex-column" >
+<div class="title-content">
+  
+    <mat-form-field  style="width: 100%;">
+                <mat-label style="font-size: 20px;"> {{'titleContentLabel'|translate}}</mat-label>
+                <input 
+                 matTooltip="{{'titleContentTooltip'|translate}}"
+                formControlName="titleContent"
+                matInput
+                type="text"
+                >
+                <mat-error >
+                    {{'titleContentLabelErrorMessage' |translate}}
+                </mat-error>
+            </mat-form-field>
+      
+        
+      
+    </div>
+<div>
+   <div class="flex-row" >
+    <div >
+        <div class="editor" >
+  
+            <div >
+                <mat-label matTooltip="{{'INTERNSHIP_ASSIGNMENT_TITLE'|translate}}" class="editor-label"> {{'descriptionLabel'|translate}}</mat-label>
+    
+            </div>
+        <div>
+        <angular-editor  formControlName="description" [config]="editorConfig"></angular-editor>
+    
+       
+    
+        <div>
+            <mat-error *ngIf="internshipTranslationForm.controls['description'].dirty && internshipTranslationForm.controls['description'].invalid">
+                {{'descriptionLabelErrorMessage' |translate}}
+            </mat-error>
+        </div>
+        </div>
+    
+    </div>
+    </div>
+    <div>
+        <div class="editor">
+  
+            <div >
+                <mat-label matTooltip="{{'INTERNSHIP_KNOWLEDGE_DESCRIPTION'|translate}}"> {{'knowledgeToDevelopLabel'|translate}}</mat-label>
+            </div>
+        <div>
+        <angular-editor  formControlName="knowledgeToDevelop" [config]="editorConfig"></angular-editor>
+    
+        <div>
+            <mat-error *ngIf="internshipTranslationForm.controls['knowledgeToDevelop'].dirty && internshipTranslationForm.controls['knowledgeToDevelop'].invalid">
+                {{'knowledgeToDevelopLabelErrorMessage' |translate}}
+            </mat-error>
+        </div>
+        </div>
+    
+    </div>
+    </div>
+   </div>
+
+</div>
+
+
+<div>
+<div class="flex-row">
+
+    <div >
+    <div class="editor">
+
+                    <div >
+                        <mat-label matTooltip="{{'INTERNSHIP_COMMENTS_TITLE'|translate}}"> {{'commentLabel'|translate}}</mat-label>
+                    </div>
+                <div>
+                <angular-editor  formControlName="comment" [config]="editorConfig"></angular-editor>
+            
+                <div>
+                    <mat-error *ngIf="internshipTranslationForm.controls['comment'].dirty && internshipTranslationForm.controls['comment'].invalid">
+                        {{'commentLabelErrorMessage' |translate}}
+                    </mat-error>
+            
+            </div>
+            
+            
+        </div>
+       
+    </div>
+    </div>
+<div>
+    <div class="editor">
+            <div>
+                <mat-label matTooltip=" {{'INTERNSHIP_NEED_TO_KNOW_DESCRIPTION'|translate}}"> {{'neededKnowledgeLabel'|translate}}</mat-label>
+            </div>
+            <div>
+                <angular-editor formControlName="neededKnowledge" [config]="editorConfig"></angular-editor>
+        
+                <div>
+                    <mat-error
+                        *ngIf="internshipTranslationForm.controls['neededKnowledge'].dirty && internshipTranslationForm.controls['neededKnowledge'].invalid">
+                        {{'neededKnowledgeLabelErrorMessage' |translate}}
+                    </mat-error>
+                </div>
+            </div>
+        
+        </div>
+</div>
+ </div>
+</div>
+</div> 
+</form>

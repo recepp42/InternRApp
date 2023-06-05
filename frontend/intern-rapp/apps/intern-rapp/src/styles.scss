@@ -1,0 +1,53 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../../../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
+
+
+html, body { height: 100%;
+
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.active {
+   color: #00b5ad;
+    
+}
+.cancel-button{
+    background-color:hsl(0, 87%, 59%);
+    color: white;
+}
+.save-button{
+    background-color:hsl(198, 83%, 45%);
+    color: white;
+}
+.flex-row-cancel-save-update{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+}
+.save-button-above-list{
+    // background-color:green;
+    color: green;
+   
+    // border-radius: 0px;
+}
+button{
+    border-radius: 0%;
+    border: none;
+    text-shadow: none;
+    box-shadow: none;
+}
+mat-icon{
+    text-shadow: none;
+        box-shadow: none;
+}
+mat-divider{
+    color: black;
+    background-color:black;
+}
+.flex-row-columns{
+    display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-weight: bold;
+        font-size: large;
+}

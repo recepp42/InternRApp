@@ -1,0 +1,46 @@
+<div  >
+
+    <div  class="header">
+        <div mat-dialog-title 
+        >
+            {{'delete' |translate}}  {{title |translate}}
+            
+        </div>
+    </div>
+    
+    </div>
+    
+    <mat-divider></mat-divider>
+    
+    <mat-dialog-content class="mat-typography">
+ 
+       {{'confirmDeleteMessage' |translate}}
+    
+  
+    
+    
+    </mat-dialog-content>
+    
+    
+    <mat-dialog-actions align="center">
+       <div class="flex-row">
+        <div>
+            <button (click)="closeDialog(true)"  class="cancel-button flex-row-cancel-save-update" >
+                
+            <div><mat-icon>delete</mat-icon></div>
+            <div>{{'delete'|translate}}</div>
+            </button>
+        </div>
+        <div>
+            <button (click)="closeDialog(false)" class="cancel-button flex-row-cancel-save-update"   mat-fab color="primary" aria-label="Example icon button with a delete icon">
+                <div>
+                    <mat-icon>cancel</mat-icon> 
+                </div>        
+                    <div>
+                        {{'cancelButtonText' |translate}}
+                    </div>
+                       </button>
+        </div>
+       </div>
+    </mat-dialog-actions>
+    

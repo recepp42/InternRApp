@@ -1,0 +1,93 @@
+<div  >
+
+    <div   class="heading">
+        <div mat-dialog-title select="[heading]">
+            {{'updateDepartmentHeader' |translate}}
+        </div>
+    </div>
+    
+    </div>
+    
+    <mat-divider></mat-divider>
+    
+    <mat-dialog-content class="mat-typography">
+    <form *ngIf="updateForm" [formGroup]="updateForm">
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>{{'departmentNameLabel' |translate}}</mat-label>
+            <input matInput type="text" formControlName="departmentName">
+            <mat-error *ngIf="updateForm.controls['departmentName'].touched&&updateForm.controls['departmentName'].hasError">
+                {{'departmentNameEmptyErrorMessage' |translate}}
+            </mat-error>
+        </mat-form-field>
+      
+    
+            
+            <mat-chip-grid #chipGrid aria-label="Manager selection">
+              <mat-chip-row *ngFor="let manager of managerEmailsAfterUpdate" (removed)="remove(manager)">
+                {{manager}}
+                <button  matChipRemove [attr.aria-label]="'remove ' + manager">
+                  <mat-icon>cancel</mat-icon>
+                </button>
+              </mat-chip-row>
+            </mat-chip-grid>
+    
+        <mat-form-field class="example-full-width">
+        <input type="text"
+               placeholder="manager email"
+               aria-label="Manager Emails"
+               matInput
+               [matChipInputFor]="chipGrid"
+               [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+               (matChipInputTokenEnd)="add($event)"
+              formControlName="managerEmails"
+               [matAutocomplete]="auto">
+        <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+          <mat-option (onSelectionChange)="addToListOfManagers($event)" *ngFor="let option of filteredOptions | async" [value]="option">
+            {{option}}
+          </mat-option>
+    
+        </mat-autocomplete>
+    </mat-form-field>
+        <div class="add-translation-button">
+          <button mat-icon-button (click)="addLanguage()" class="align-to-top-right">
+            <mat-icon>add</mat-icon>
+          </button>
+        </div>
+        <mat-tab-group mat-align-tabs="center" backgroundColor="primary" formArrayName="translateTabs">
+          <mat-tab *ngFor="let tab of tabs" label="{{getFormGroupOutOfAbstractControl(tab).controls['languageName'].value}}">
+            <intern-rapp-preface-translation-form [unitPrefaceTranslationForm]="getFormGroupOutOfAbstractControl(tab)">
+        
+            </intern-rapp-preface-translation-form>
+          </mat-tab>
+        
+        </mat-tab-group>
+    
+    </form>
+    
+    
+    </mat-dialog-content>
+    
+    
+    <mat-dialog-actions align="center">
+       <div class="flex-row">
+        <div>
+            <button mat-icon-button (click)="close(true)" class="save-button flex-row-cancel-save-update"  [disabled]="!updateForm?.valid||managerEmailsAfterUpdate.length<=0" >
+                
+           <mat-icon>edit</mat-icon>
+            <div>Update</div>
+            </button>
+        </div>
+        <div>
+      
+           <button mat-icon-button (click)="close(false)" class="cancel-button   flex-row-cancel-save-update"   mat-fab color="primary" aria-label="Example icon button with a delete icon">
+                <mat-icon>cancel</mat-icon> 
+                <div>
+                    Cancel
+                </div>
+                   </button>
+    
+            
+        </div>
+       </div>
+    </mat-dialog-actions>
+    

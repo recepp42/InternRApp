@@ -1,0 +1,76 @@
+<div  >
+
+    <div   class="heading">
+        <div mat-dialog-title select="[heading]">
+           {{'updateLocationHeader' |translate}}
+        </div>
+    </div>
+    
+    </div>
+    
+    <mat-divider></mat-divider>
+    
+    <mat-dialog-content class="mat-typography">
+    <form [formGroup]="updateForm">
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>{{'locationCityLabel' | translate}}</mat-label>
+            <input matInput type="text" formControlName="locationCity">
+            <mat-error *ngIf="updateForm.controls.locationCity.touched&&updateForm.controls.locationCity.hasError">
+                {{'locationCityRequiredErrorMessage' |translate}}
+            </mat-error>
+        </mat-form-field>
+      
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>{{'locationStreetNameLabel' | translate}}</mat-label>
+            <input matInput type="text" formControlName="locationStreet">
+            <mat-error *ngIf="updateForm.controls.locationStreet.touched&&updateForm.controls.locationStreet.hasError">
+                {{'locationStreetRequiredErrorMessage' | translate}}
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>{{'locationHouseNumberLabel' | translate}}</mat-label>
+            <input matInput type="number" formControlName="locationHouseNumber">
+            <mat-error *ngIf="updateForm.controls.locationHouseNumber.touched&&updateForm.controls.locationHouseNumber.hasError">
+                {{'locationHouseNumberErrorMessage' | translate}}
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>{{'locationZipCodeLabel' | translate}}</mat-label>
+            <input matInput type="text" formControlName="locationZipCode">
+            <mat-error *ngIf="updateForm.controls.locationZipCode.touched&&updateForm.controls.locationZipCode.hasError">
+                {{'locationZipCodeRequiredErrorMessage' | translate}}
+            </mat-error>
+        </mat-form-field> 
+    </form>
+    
+    
+    </mat-dialog-content>
+    
+    
+    <mat-dialog-actions align="center">
+       <div class="flex-row">
+        <div>
+            <button (click)="close()" class="save-button flex-row-cancel-save-update"  [disabled]="!updateForm.valid" >
+                
+            <div><mat-icon>edit</mat-icon></div>
+            <div>Update</div>
+            </button>
+        </div>
+        <div>
+      
+           <button (click)="close()" class="cancel-button   flex-row-cancel-save-update"   mat-fab color="primary" aria-label="Example icon button with a delete icon">
+            <div>
+                <mat-icon>cancel</mat-icon> 
+            </div>        
+                <div>
+                    Cancel
+                </div>
+                   </button>
+    
+            
+        </div>
+       </div>
+    </mat-dialog-actions>
+    

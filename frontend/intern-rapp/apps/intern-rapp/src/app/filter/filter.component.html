@@ -1,0 +1,48 @@
+<form [formGroup]="filterForm" class="example-form">
+<div class="flex-row">
+<div class="flex-start" *ngFor="let filter of filters">
+<ng-container [ngSwitch]="filter.type">
+<mat-form-field *ngSwitchCase="filtertype.Text">
+        <mat-label>{{filter.label |translate}}</mat-label>
+        <input  matInput  formControlName="{{filter.name}}" >
+</mat-form-field>
+<ng-container *ngIf="filter?.observable|async as items">
+<mat-form-field *ngSwitchCase="filtertype.MultiSelectDropdown"> 
+        <mat-label>{{filter.label |translate}}</mat-label>
+
+<mat-select  multiple matInput formControlName="{{filter.name}}"  >
+
+        <mat-option  *ngFor="let item of  items" value="{{filter.optionBuilder(items,item)?.pop()}}">
+                {{filter.optionBuilder(items,item)?.shift()}}
+                
+        </mat-option>
+</mat-select>
+
+</mat-form-field>
+<mat-form-field *ngSwitchCase="filtertype.SingleSelectDropdown" >
+        <mat-label>{{filter.label |translate}}</mat-label>
+
+        <mat-select  matInput formControlName="{{filter.name}}" >
+
+                <mat-option *ngFor="let item of  items" value="{{filter.optionBuilder(items,item)?.pop()}}" >
+                {{filter.optionBuilder(items,item)?.shift()}}
+                </mat-option>
+        </mat-select>
+</mat-form-field>
+
+</ng-container>
+</ng-container>
+
+
+
+</div>
+<div class="flex-end"> 
+<button (click)="filter()" class="flex-row ">
+                <mat-icon>search</mat-icon> 
+</button>
+</div>
+</div>
+
+</form>
+  
+

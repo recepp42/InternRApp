@@ -1,0 +1,42 @@
+<div class="login-form-flex">
+    <mat-card>
+        <mat-card-title>
+            <div style="padding: 15px;">
+                REGISTER
+            </div>
+        </mat-card-title>
+        <mat-card-content>
+            <form *ngIf="RegistrationForm" [formGroup]="RegistrationForm">
+                <mat-form-field>
+                <mat-label>{{'EmailRegistrationLabel'|translate}}</mat-label>
+        
+                <input matInput formControlName="email">
+                    <mat-error></mat-error>
+                </mat-form-field>
+                <br />
+                <mat-form-field>
+                <mat-label>{{'PasswordRegistrationLabel'|translate}}</mat-label>
+                <input type="password" matInput formControlName="password">
+                <mat-error></mat-error>
+                </mat-form-field>
+                <br />
+
+                    <mat-form-field>
+                        <mat-label>{{'SubmitPasswordRegistrationLabel'|translate}}</mat-label>
+                        <input type="password" matInput formControlName="submitPassword">
+                        <mat-error></mat-error>
+                    </mat-form-field>
+            </form>
+        </mat-card-content>
+        <mat-card-actions>
+           
+            <div class="button-flex-container">
+<button [disabled]="RegistrationForm?.invalid" mat-raised-button color="primary" (click)="register()">REGISTER</button>
+                
+
+            </div>
+        </mat-card-actions>
+
+    </mat-card>
+
+</div>

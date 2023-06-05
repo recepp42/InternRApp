@@ -1,0 +1,154 @@
+<h3 class="center-header">{{'addInternshipTitle' |translate}}</h3>
+<form *ngIf="addInternshipForm" [formGroup]="addInternshipForm" class="form">
+  
+
+    <div class="flex-row" >
+      <div >
+        <mat-form-field >
+            <mat-select formControlName="schoolYear"  >
+                <mat-option   *ngFor="let date of availableDates()" [value]="date" >
+                {{date}}
+                </mat-option>
+            </mat-select>
+            <mat-error >
+                {{'schoolyearErrorMessage' |translate}}
+            </mat-error>
+               </mat-form-field>
+      </div>  
+
+
+<div >
+    <mat-form-field *ngIf="unitObs$ | async as options">
+        <mat-label>Unit</mat-label>
+        <input type="text"
+               placeholder="Unit"
+               aria-label="Unit"
+               formControlName="unitId"
+               matInput
+            [matAutocomplete]="auto">
+       <mat-autocomplete    autoActiveFirstOption #auto="matAutocomplete"   [displayWith]="convertOptionToName(options)" >
+        <mat-option  *ngFor="let option of options" [value]="option.id" [id]="(option.id).toString()">
+          {{option.name}}
+        </mat-option>
+      </mat-autocomplete>
+      <mat-error >
+        {{'unitEmptyErrorMessage' |translate}}
+    </mat-error>
+      </mat-form-field>
+</div>
+
+   
+</div>
+<div class="flex-row">
+<div>
+    <mat-form-field  >
+        <mat-label> {{'maxCountOfStudentsLabel'|translate}}</mat-label>
+        <input
+        formControlName="maxStudents"
+        matInput
+        type="number"
+        >
+        <mat-error >
+            {{buildErrorMessage('maxStudents')}}
+        </mat-error>
+    </mat-form-field>
+
+</div>
+<div>
+    <mat-form-field  >
+        <mat-label> {{'currentCountOfStudentsLabel'|translate}}</mat-label>
+        <input 
+        formControlName="currentCountOfStudents"
+        matInput
+        type="number"
+  
+        >
+        <mat-error >
+          {{buildErrorMessage('currentCountOfStudents')}}
+        </mat-error>
+    </mat-form-field>
+
+</div>
+</div>
+
+
+
+<div class="flex-row" >
+
+    <div >
+      <mat-form-field >
+        <mat-label>{{'trainingTypeLabel'|translate}}</mat-label>
+          <mat-select  matNativeControl formControlName="trainingType" [compareWith]="compareTrainingType">
+              <mat-option  *ngFor="let  availableTrainingType of availableTrainingTypes;" 
+              value="{{trainingType[availableTrainingType]}}" 
+               >
+              {{availableTrainingType|translate}} 
+              </mat-option>
+            
+          </mat-select>
+      
+          <mat-error >
+              {{'schoolyearErrorMessage' |translate}}
+          </mat-error>
+             </mat-form-field>
+    </div> 
+    <div >
+
+        <mat-form-field >
+            <mat-label>{{'locationFieldLabel'|translate}}</mat-label>
+         
+            <mat-select  formControlName="locations" multiple="true" [compareWith]="compareLocation" >
+                <mat-option   *ngFor="let location of locationObs$|async" [value]="location" >
+                {{location.streetname}} {{location.housenumber}},{{location.city}} {{location.zipcode}}
+                </mat-option>
+            </mat-select>
+            <mat-error >
+                {{'locationFieldEmptyMessage' |translate}}
+            </mat-error>
+               </mat-form-field>
+    </div> 
+  
+   
+
+    </div>
+<div class="flex-row-add-translation-button">
+<div class="add-translation-button">
+    <button mat-icon-button (click)="addLanguage()">
+        <mat-icon>add</mat-icon>
+    </button>
+</div>
+    </div>
+  
+    <mat-tab-group style="width: 80%;margin-left: 10%;margin-top: 1%;" mat-align-tabs="center" backgroundColor="primary"
+        formArrayName="translateTabs">
+        <ng-container *ngFor="let tab of tabs; let i = index;">
+            <mat-tab >
+                <ng-template mat-tab-label>
+                    {{getFormGroupOutOfAbstractControl(tab).controls['languageCode'].value}}
+                    <button mat-icon-button style="color:red;" (click)="deleteTranslation(getTranslationId(getFormGroupOutOfAbstractControl(tab)),i)">
+                        <mat-icon>close</mat-icon>
+                    </button>
+                </ng-template>
+                <intern-rapp-translation-add-form [internshipTranslationForm]="getFormGroupOutOfAbstractControl(tab)">
+                </intern-rapp-translation-add-form>
+            </mat-tab>
+        </ng-container>
+    </mat-tab-group>
+<!-- <mat-tab-group style="width: 60%;margin-left: 20%;margin-top: 3%;"   mat-align-tabs="center" backgroundColor="primary"  formArrayName="translateTabs">
+
+    <mat-tab  *ngFor="let tab of tabs" label="{{getFormGroupOutOfAbstractControl(tab).controls['languageName'].value}}"> 
+       
+    <intern-rapp-translation-add-form [internshipTranslationForm]="getFormGroupOutOfAbstractControl(tab)">
+    </intern-rapp-translation-add-form>
+    </mat-tab>
+ 
+
+
+  </mat-tab-group> -->
+  <button [disabled]="this.addInternshipForm.invalid||tabsArrayLength<1||tabIsInvalid" type="button" class="save-button" mat-icon-button  (click)="addInternship()">
+    <mat-icon>save</mat-icon>
+</button>
+    </form>
+      
+      
+    

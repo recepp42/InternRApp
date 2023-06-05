@@ -1,0 +1,90 @@
+
+  .form {
+
+    width: 100%;
+    margin-top: 1%;
+   height: 100%;
+  }
+  .center{
+    margin-left: 10%;
+  }
+  .save-button{
+  margin-left: 50%;
+  margin-top: 2%;
+    
+  }
+  .center-header{
+    margin-top: 1%;
+   text-align: center;
+   margin-left: 10%;
+   width: 80%;
+    background-color: rgb(69, 116, 181);
+    color: white;
+  }
+
+  .flex-row{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    width: 101.3%;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+  .flex-row >div:first-child{
+    margin-left: 6%;
+    width: 100%;
+  }
+  .flex-row >div:first-child> mat-form-field{
+    margin-left: 10%;
+    width: 98%;
+  }
+  .flex-row >div:nth-child(2){
+    margin-right: 15%;
+    width: 95%;
+  }
+  
+  .flex-row >div:nth-child(2) >mat-form-field{
+    margin-left: 10%;
+    width: 100%;
+  }
+  
+  .flex-end{
+    align-items: flex-end;
+  }
+  .flex-start{
+    align-items: flex-start;
+  }
+  .add-translation-button{
+    margin-left: 150%;
+  }
+ 
+#trainingType{
+ margin-left: 5.8%;
+margin-right: 1.2%;
+ width: 370%;
+}
+#location{
+margin-left: 25%;
+width: 367%;
+}
+
+
+.tab-label-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tab-label-text {
+  margin-right: 12px;
+}
+.flex-row-add-translation-button{
+  margin-top: 2%;
+      display: flex;
+        flex-direction: row;
+        gap: 15px;
+        width: 80%;
+        justify-content: flex-end;
+        align-items: center;
+}

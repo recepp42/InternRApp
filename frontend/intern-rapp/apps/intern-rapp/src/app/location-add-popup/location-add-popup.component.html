@@ -1,0 +1,76 @@
+<div  >
+
+    <div   class="heading">
+        <div mat-dialog-title select="[heading]">
+           {{'addLocationHeader' | translate}}
+        </div>
+    </div>
+    
+    </div>
+    
+    <mat-divider></mat-divider>
+    
+    <mat-dialog-content class="mat-typography">
+    <form [formGroup]="addForm">
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>{{'locationCityLabel' | translate}}</mat-label>
+            <input matInput type="text" formControlName="locationCity">
+            <mat-error *ngIf="addForm.controls.locationCity.touched&&addForm.controls.locationCity.hasError">
+                {{'locationCityRequiredErrorMessage' |translate}}
+            </mat-error>
+        </mat-form-field>
+      
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>{{'locationStreetNameLabel' | translate}}</mat-label>
+            <input matInput type="text" formControlName="locationStreet">
+            <mat-error *ngIf="addForm.controls.locationStreet.touched&&addForm.controls.locationStreet.hasError">
+                {{'locationStreetRequiredErrorMessage' | translate}}
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>{{'locationHouseNumberLabel' | translate}}</mat-label>
+            <input matInput type="number" formControlName="locationHouseNumber">
+            <mat-error *ngIf="addForm.controls.locationHouseNumber.touched&&addForm.controls.locationHouseNumber.hasError">
+                {{'locationHouseNumberErrorMessage' | translate}}
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>{{'locationZipCodeLabel' | translate}}</mat-label>
+            <input matInput type="text" formControlName="locationZipCode">
+            <mat-error *ngIf="addForm.controls.locationZipCode.touched&&addForm.controls.locationZipCode.hasError">
+                {{'locationZipCodeRequiredErrorMessage' | translate}}
+            </mat-error>
+        </mat-form-field> 
+    </form>
+    
+    
+    </mat-dialog-content>
+    
+    
+    <mat-dialog-actions align="center">
+       <div class="flex-row">
+        <div>
+            <button class="save-button flex-row-cancel-save-update" (click)="closeDialog(true)" [disabled]="!addForm.valid" >
+                
+            <div><mat-icon>save</mat-icon></div>
+            <div>{{'saveButtonText' |translate}}</div>
+            </button>
+        </div>
+        <div>
+      
+           <button class="cancel-button   flex-row-cancel-save-update"  (click)="closeDialog(false)" mat-fab color="primary" aria-label="Example icon button with a delete icon">
+            <div>
+                <mat-icon>cancel</mat-icon> 
+            </div>        
+                <div>
+                    {{'cancelButtonText' |translate}}
+                </div>
+                   </button>
+    
+            
+        </div>
+       </div>
+    </mat-dialog-actions>
+    

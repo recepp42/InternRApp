@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="a" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ACADEMICT_DESCRIPTION" xml:space="preserve">
+    <value>&lt;p&gt;With the &lt;strong&gt;acADDemICT Junior Track&lt;/strong&gt;, Realdolmen introduces a &lt;strong&gt;unique program&lt;/strong&gt; focused on recent graduates. The term &lt;strong&gt;acADDemICT&lt;/strong&gt; refers to a recent graduate who is passionate about ICT and has a lifelong learning mindset.&lt;/p&gt;
+
+&lt;p&gt;Every year, Realdolmen invests in a &lt;strong&gt;small number of high potentials&lt;/strong&gt;. During an &lt;strong&gt;intensive training period of 3 months&lt;/strong&gt;, Realdolmen prepares them for the life of a professional ICT Consultant. At Realdolmen, we also understand that a career is more than a series of different jobs. It is a continuous &lt;strong&gt;growth process&lt;/strong&gt; and the realization of your &lt;strong&gt;professional ambitions&lt;/strong&gt; while putting your expertise at the service of Realdolmen.&lt;/p&gt;
+
+&lt;p&gt;It is important to know that &lt;strong&gt;career opportunities&lt;/strong&gt; are not empty promises for us. Your career can evolve both vertically and horizontally. You can also contribute to Realdolmen's growth path in supporting roles or business development. In any case, you will be guided by experienced coaches who help you make the right choices and you will be supported by a wide range of learning opportunities.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://jobs.realdolmen.com"&gt;https://jobs.realdolmen.com&lt;/a&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="ACADEMICT_TITLE" xml:space="preserve">
+    <value>acADDemICT Junior Track</value>
+  </data>
+  <data name="addButton" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="addDepartmentHeader" xml:space="preserve">
+    <value>Add department</value>
+  </data>
+  <data name="addInternshipTitle" xml:space="preserve">
+    <value>Add internship</value>
+  </data>
+  <data name="addLanguageHeader" xml:space="preserve">
+    <value>Add a new language</value>
+  </data>
+  <data name="addLocationHeader" xml:space="preserve">
+    <value>Add a location</value>
+  </data>
+  <data name="af" xml:space="preserve">
+    <value>Graduate</value>
+  </data>
+  <data name="and" xml:space="preserve">
+    <value>And</value>
+  </data>
+  <data name="Bachelor" xml:space="preserve">
+    <value>Bachelor</value>
+  </data>
+  <data name="cancelButtonText" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="commentLabel" xml:space="preserve">
+    <value>Additional information to the assingment</value>
+  </data>
+  <data name="commentLabelErrorMessage" xml:space="preserve">
+    <value>Field may not be empty or greater than 1000 characters</value>
+  </data>
+  <data name="COMPANY_DESCRIPTION" xml:space="preserve">
+    <value>&lt;p&gt;Inetum-Realdolmen is a member of the European Inetum Group and serves over 1,000 customers in the Benelux region with approximately 1,950 highly skilled employees. We provide strategic, tactical, and operational ICT services.&lt;/p&gt;
+
+&lt;p&gt;In every collaboration, Inetum-Realdolmen unleashes the potential of individuals and organizations, striving to make ICT more human-centered. We are driven by technological innovations, but we adapt to the pace of each ambition, focusing on delivering results and creating a fundamental impact.&lt;/p&gt;
+
+&lt;p&gt;All of this is guided by our company motto: &lt;strong&gt;New Challenges, New Ideas&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We have a strong local presence in Belgium with offices in Huizingen, Kontich, Gent, Leuven, and Lummen. Together, we are part of the international Inetum Group, one of the top-performing companies in digital and IT services in the industry. The Inetum Group is headquartered in Paris and operates mainly in France, Spain, Portugal, and 17 other countries within and outside Europe.&lt;/p&gt;</value>
+  </data>
+  <data name="COMPANY_TITLE" xml:space="preserve">
+    <value>Inetum-Realdolmen</value>
+  </data>
+  <data name="COMPANY_VALUES_DESCRIPTION" xml:space="preserve">
+    <value>&lt;p&gt;Our values are more than empty words. They are the foundations upon which we build to become an Employer of Choice for our employees. They are the guiding principles that underpin everything we do to achieve success and excellence.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Ambition&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Our ambition is to reach further and higher every day and to do our utmost for our clients with passion. We are proud of our craftsmanship and shared successes. We value each other and care about personal growth in order to realize the potential of people and organizations.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Team Spirit&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Cooperation and enthusiasm define our success. We appreciate each other participation and contribution. We stimulate open dialogue. Our organization encourages idea and knowledge sharing in a wide professional network.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Commitment &lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We make clear and realistic agreements, and keep our promises. As engaged employees, we are all ambassadors, committed to deliver a unique and positive customer experience. We always take responsibility and focus on results.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Innovation &lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Driven by creativity, we work together with an open mind to meet the challenges of tomorrow. We optimize existing processes and find innovative solutions. We cocreate in an agile and pragmatic way with our colleagues and partners to help our clients to differentiate in their market.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Social responsibility &lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;For us, it is all about people. We welcome and leverage individual differences. We promote diversity. We invest in education programs and social partnerships. We are driven by our commitment to sustainable development.&lt;/p&gt;</value>
+  </data>
+  <data name="COMPANY_VALUES_TITLE" xml:space="preserve">
+    <value>Values</value>
+  </data>
+  <data name="COMPANY_VISION_DESCRIPTION" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Visie&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In the local markets and domains where we operate, our vision is to be the reference point for integrated solutions that support the entire ICT lifecycle.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Reference: We strive to be the preferred and reliable choice for customers, partners, and employees.&lt;/li&gt;
+  &lt;li&gt;Local: We prioritize proximity to our customers in the Benelux region.&lt;/li&gt;
+  &lt;li&gt;Integrated solutions: We offer a comprehensive range of ICT solutions that cover the entire lifecycle, including infrastructure, applications, and communication.&lt;/li&gt;
+  &lt;li&gt;Entire ICT lifecycle: We support all plan-build-run (design-deploy-maintain) activities throughout the ICT lifecycle.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Mission&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We make ICT work for your business make IT more human again&lt;/p&gt;</value>
+  </data>
+  <data name="COMPANY_VISION_TITLE" xml:space="preserve">
+    <value>Our vision &amp; Mission</value>
+  </data>
+  <data name="confirmDeleteMessage" xml:space="preserve">
+    <value>Are you sure to delete? </value>
+  </data>
+  <data name="contentLabel" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="currentCountOfStudentsErrorMessage" xml:space="preserve">
+    <value>Make sure you are entering a positive number</value>
+  </data>
+  <data name="currentCountOfStudentsLabel" xml:space="preserve">
+    <value>Count of students that occupy the internship</value>
+  </data>
+  <data name="delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="deleteButton" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="department" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="departmentNameEmptyErrorMessage" xml:space="preserve">
+    <value>The name of the department is required</value>
+  </data>
+  <data name="departmentNameExportOptionsErrorMessage" xml:space="preserve">
+    <value>Department is required</value>
+  </data>
+  <data name="departmentNameLabel" xml:space="preserve">
+    <value>Department name</value>
+  </data>
+  <data name="departments" xml:space="preserve">
+    <value>Departments</value>
+  </data>
+  <data name="descriptionLabel" xml:space="preserve">
+    <value>Description of the assignment</value>
+  </data>
+  <data name="descriptionLabelErrorMessage" xml:space="preserve">
+    <value>Field may not be empthy and  longer greater than 1000 characters</value>
+  </data>
+  <data name="editButton" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="emailLabel" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="EmailRegistrationLabel" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="En" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="events" xml:space="preserve">
+    <value>Events</value>
+  </data>
+  <data name="exportButton" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="exportPopupHeader" xml:space="preserve">
+    <value>Export internships</value>
+  </data>
+  <data name="Fr" xml:space="preserve">
+    <value>French</value>
+  </data>
+  <data name="FreeUsedPlacesLabel" xml:space="preserve">
+    <value>Student count</value>
+  </data>
+  <data name="greaterThanMaxStudentsErrorMessage" xml:space="preserve">
+    <value>The count of students of the internship may not exceed the maxium </value>
+  </data>
+  <data name="GreaterThanParamLimitError" xml:space="preserve">
+    <value>You must enter a number between 0 and 15.</value>
+  </data>
+  <data name="Hbo5" xml:space="preserve">
+    <value>Graduate</value>
+  </data>
+  <data name="internship" xml:space="preserve">
+    <value>Internship</value>
+  </data>
+  <data name="internshipNameColumnLabel" xml:space="preserve">
+    <value>Internship name</value>
+  </data>
+  <data name="internships" xml:space="preserve">
+    <value>Internships</value>
+  </data>
+  <data name="InternshipTranslation" xml:space="preserve">
+    <value>internship translation</value>
+  </data>
+  <data name="INTERNSHIP_ASSIGNMENT_TITLE" xml:space="preserve">
+    <value>Description of the assignment</value>
+  </data>
+  <data name="INTERNSHIP_COMMENTS_TITLE" xml:space="preserve">
+    <value>Additional information to the assingment</value>
+  </data>
+  <data name="INTERNSHIP_KNOWLEDGE_DESCRIPTION" xml:space="preserve">
+    <value>Technical and non-technical listing of the knowledge and competencies the intern will acquire during the internship</value>
+  </data>
+  <data name="INTERNSHIP_KNOWLEDGE_TITLE" xml:space="preserve">
+    <value>What knowledge and competencies will you acquire during the assignment</value>
+  </data>
+  <data name="INTERNSHIP_LANGUAGE_TITLE" xml:space="preserve">
+    <value>Available in these languages</value>
+  </data>
+  <data name="INTERNSHIP_LOCATION_DESCRIPTION" xml:space="preserve">
+    <value>The assignment can take place on the following locations</value>
+  </data>
+  <data name="INTERNSHIP_LOCATION_TITLE" xml:space="preserve">
+    <value>Locations</value>
+  </data>
+  <data name="INTERNSHIP_NEED_TO_KNOW_DESCRIPTION" xml:space="preserve">
+    <value>Technical and non-technical listing of the knowledge and competencies that the intern needs at least to successfully complete the assignment.</value>
+  </data>
+  <data name="INTERNSHIP_NEED_TO_KNOW_TITLE" xml:space="preserve">
+    <value>What knowledge and competencies do you need to have for this assignment</value>
+  </data>
+  <data name="knowledgeToDevelopLabel" xml:space="preserve">
+    <value>What knowledge will you acquire during the assignment</value>
+  </data>
+  <data name="knowledgeToDevelopLabelErrorMessage" xml:space="preserve">
+    <value>Field may not be empthy or exceed more than 1000 characters</value>
+  </data>
+  <data name="language" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="languageCodeLabel" xml:space="preserve">
+    <value>Language code</value>
+  </data>
+  <data name="languageCodeRequiredErrorMessage" xml:space="preserve">
+    <value>The language code is required</value>
+  </data>
+  <data name="languageExport" xml:space="preserve">
+    <value>This selects the language for which there are internships available in that language</value>
+  </data>
+  <data name="languageLabel" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="languageNameLabel" xml:space="preserve">
+    <value>Language </value>
+  </data>
+  <data name="languageNameRequiredErrorMessage" xml:space="preserve">
+    <value>The language name is required</value>
+  </data>
+  <data name="locationCityLabel" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="locationFieldEmptyMessage" xml:space="preserve">
+    <value> select a location </value>
+  </data>
+  <data name="locationFieldLabel" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="locationHouseNumberErrorMessage" xml:space="preserve">
+    <value> House number is required</value>
+  </data>
+  <data name="locationHouseNumberLabel" xml:space="preserve">
+    <value>House number</value>
+  </data>
+  <data name="locationLabel" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="locations" xml:space="preserve">
+    <value>Locations</value>
+  </data>
+  <data name="locationStreetNameLabel" xml:space="preserve">
+    <value> Street </value>
+  </data>
+  <data name="locationStreetRequiredErrorMessage" xml:space="preserve">
+    <value> Street is required</value>
+  </data>
+  <data name="locationZipCodeLabel" xml:space="preserve">
+    <value> Zipcode</value>
+  </data>
+  <data name="locationZipCodeRequiredErrorMessage" xml:space="preserve">
+    <value> Zipcode is required</value>
+  </data>
+  <data name="managerEmail" xml:space="preserve">
+    <value>Manager email</value>
+  </data>
+  <data name="managerEmailsLabel" xml:space="preserve">
+    <value>The email of the managers</value>
+  </data>
+  <data name="Master" xml:space="preserve">
+    <value>Master</value>
+  </data>
+  <data name="MasterAfterBachelor" xml:space="preserve">
+    <value>Master after Bachelor</value>
+  </data>
+  <data name="MasterAfterMaster" xml:space="preserve">
+    <value>Master after Master</value>
+  </data>
+  <data name="maxCountOfStudentsLabel" xml:space="preserve">
+    <value>Maximum allowed students</value>
+  </data>
+  <data name="maxStudentsErrorMessage" xml:space="preserve">
+    <value>Make sure you are entering a positive number</value>
+  </data>
+  <data name="neededKnowledgeLabel" xml:space="preserve">
+    <value>What knowledge do you need for this assignment</value>
+  </data>
+  <data name="neededKnowledgeLabelErrorMessage" xml:space="preserve">
+    <value>Field may not be empthy or exceed more than 1000 characters</value>
+  </data>
+  <data name="newInternShip" xml:space="preserve">
+    <value>New InternShip</value>
+  </data>
+  <data name="Nl" xml:space="preserve">
+    <value>Dutch</value>
+  </data>
+  <data name="passwordLabel" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="PasswordRegistrationLabel" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="PGCE" xml:space="preserve">
+    <value>Post Graduate</value>
+  </data>
+  <data name="PHD" xml:space="preserve">
+    <value>Doctorate</value>
+  </data>
+  <data name="q" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RegistrationNavbarItem" xml:space="preserve">
+    <value>Registration</value>
+  </data>
+  <data name="RequiredTrainingText" xml:space="preserve">
+    <value>Required degree for this internship is:</value>
+  </data>
+  <data name="saveButtonText" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="schoolyearErrorMessage" xml:space="preserve">
+    <value>The schoolyear is required</value>
+  </data>
+  <data name="schoolYearLabel" xml:space="preserve">
+    <value>School year</value>
+  </data>
+  <data name="SnackbarIntersnipCopyText" xml:space="preserve">
+    <value>This copies the selected internships to the next year</value>
+  </data>
+  <data name="SubmitPasswordRegistrationLabel" xml:space="preserve">
+    <value>Submit Password</value>
+  </data>
+  <data name="TEMPLATE_TITLE" xml:space="preserve">
+    <value>Inetum-Realdolmen Bundle of Internships</value>
+  </data>
+  <data name="titleContentLabel" xml:space="preserve">
+    <value>Internship Title</value>
+  </data>
+  <data name="titleContentLabelErrorMessage" xml:space="preserve">
+    <value>The name of the internship may not be empty</value>
+  </data>
+  <data name="titleContentTooltip" xml:space="preserve">
+    <value>The name of the internship in a specific language</value>
+  </data>
+  <data name="trainingTypeLabel" xml:space="preserve">
+    <value>Required training type</value>
+  </data>
+  <data name="unitEmptyErrorMessage" xml:space="preserve">
+    <value>The unit is required</value>
+  </data>
+  <data name="Unitname" xml:space="preserve">
+    <value />
+  </data>
+  <data name="unitNameLabel" xml:space="preserve">
+    <value>Unit</value>
+  </data>
+  <data name="updateButtonText" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="updateDepartmentHeader" xml:space="preserve">
+    <value>Update department</value>
+  </data>
+  <data name="updateLanguageHeader" xml:space="preserve">
+    <value>Update language</value>
+  </data>
+  <data name="updateLocationHeader" xml:space="preserve">
+    <value>Update location</value>
+  </data>
+  <data name="users" xml:space="preserve">
+    <value>Users</value>
+  </data>
+</root>

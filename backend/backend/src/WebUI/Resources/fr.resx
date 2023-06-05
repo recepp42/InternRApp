@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ACADEMICT_DESCRIPTION" xml:space="preserve">
+    <value>&lt;p&gt;
+Avec le programme &lt;strong&gt;acADDemICT Junior Track&lt;/strong&gt;, Realdolmen propose un &lt;strong&gt;programme unique&lt;/strong&gt; axe sur les jeunes diplomes. Le terme &lt;strong&gt;acADDemICT&lt;/strong&gt; designe un jeune diplome passionne par les TIC et desireux d'apprendre tout au long de sa vie.&lt;/p&gt;
+
+&lt;p&gt;Chaque annee, Realdolmen investit dans un &lt;strong&gt;petit nombre de talents prometteurs&lt;/strong&gt;. Au cours d'une &lt;strong&gt;periode de formation intensive de 3 mois&lt;/strong&gt;, Realdolmen les prepare a une carriere de consultant professionnel en TIC. Chez Realdolmen, nous savons egalement qu'une carriere ne se limite pas a une succession d'emplois differents. C'est un processus de croissance continu et la realisation de vos ambitions professionnelles tout en mettant vos connaissances au service de Realdolmen.&lt;/p&gt;
+
+&lt;p&gt;Il est important de savoir que les &lt;strong&gt;opportunites d'avancement&lt;/strong&gt; ne sont pas de vaines promesses pour nous. Votre carriere peut evoluer tant verticalement qu'horizontalement. Que ce soit dans des roles de soutien ou dans le developpement des affaires, vous pouvez contribuer a la trajectoire de croissance de Realdolmen. Vous serez accompagne(e) par des coaches experimentes qui vous aideront a prendre les bonnes decisions, et vous beneficierez d'une large gamme de possibilites d'apprentissage.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://jobs.realdolmen.com"&gt;https://jobs.realdolmen.com&lt;/a&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="ACADEMICT_TITLE" xml:space="preserve">
+    <value>acADDemICT Junior Track</value>
+  </data>
+  <data name="addButton" xml:space="preserve">
+    <value>Nouveau</value>
+  </data>
+  <data name="addDepartmentHeader" xml:space="preserve">
+    <value>Ajouter un departement</value>
+  </data>
+  <data name="addInternshipTitle" xml:space="preserve">
+    <value>Ajouter un stage</value>
+  </data>
+  <data name="addLanguageHeader" xml:space="preserve">
+    <value>Ajouter une nouvelle langue</value>
+  </data>
+  <data name="addLocationHeader" xml:space="preserve">
+    <value>Ajouter un lieu</value>
+  </data>
+  <data name="and" xml:space="preserve">
+    <value>En</value>
+  </data>
+  <data name="Bachelor" xml:space="preserve">
+    <value>Bachelier</value>
+  </data>
+  <data name="cancelButtonText" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="commentLabel" xml:space="preserve">
+    <value>Informations complementaires concernant la mission de stage</value>
+  </data>
+  <data name="commentLabelErrorMessage" xml:space="preserve">
+    <value>Le formulaire ne peut pas être vide ou dépasser 1000 caractères.</value>
+  </data>
+  <data name="COMPANY_DESCRIPTION" xml:space="preserve">
+    <value>&lt;p&gt;Inetum-Realdolmen est membre du groupe europeen Inetum et compte environ 1 950 employes hautement qualifies aux Pays-Bas, en Belgique et au Luxembourg, au service de plus de 1 000 clients dans les domaines strategique, tactique et operationnel des TIC.&lt;/p&gt;
+
+&lt;p&gt;Dans chaque collaboration, Inetum-Realdolmen exploite le potentiel des individus et des organisations et vise a humaniser les technologies de l'information et de la communication. Nous sommes motives par les innovations technologiques, mais a un rythme correspondant a chaque ambition, axe sur les resultats et avec un effet fondamental.&lt;/p&gt;
+
+&lt;p&gt;Tout cela est regi par la devise d'entreprise &lt;strong&gt;Nouveaux defis, nouvelles idees&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Nous sommes solidement implantes localement en Belgique, avec des bureaux a Huizingen, Kontich, Gand, Louvain et Lummen. Ensemble, nous faisons partie du groupe international Inetum, l'une des entreprises les plus performantes dans le domaine des services numeriques et informatiques du secteur. Le siege social du groupe Inetum est situe a Paris et il est principalement actif en France, en Espagne, au Portugal et dans 17 autres pays en Europe et ailleurs.&lt;/p&gt;</value>
+  </data>
+  <data name="COMPANY_TITLE" xml:space="preserve">
+    <value>Inetum-Realdolmen</value>
+  </data>
+  <data name="COMPANY_VALUES_DESCRIPTION" xml:space="preserve">
+    <value>&lt;p&gt;Nos valeurs sont plus que de simples mots. Elles sont les fondements sur lesquels nous construisons pour etre l'employeur de choix pour nos collaborateurs. Elles sont le fil conducteur de tout ce que nous faisons pour reussir et exceller.&lt;/p&gt;
+ &lt;p&gt;&lt;strong&gt;Ambition&lt;/strong&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Our ambition is to reach further and higher every day and to do our utmost for our clients with passion. We are proud of our craftsmanship and shared successes. We value each other and care about personal growth in order to realize the potential of people and organizations.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Esprit d'equipe&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;La cooperation et l'enthousiasme definissent notre succes. Nous apprecions la participation et la contribution de chacun. Nous favorisons le dialogue ouvert. Notre organisation encourage le partage d'idees et de connaissances dans un vaste reseau professionnel.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Engagement&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Nous concluons des accords clairs et realistes et nous les respectons. En tant qu'employes engages, nous sommes tous des ambassadeurs, engages a offrir une experience client unique et positive. Nous assumons toujours nos responsabilites et nous nous concentrons sur les resultats.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Innovation&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Animes par la creativite, nous travaillons ensemble avec un esprit ouvert pour relever les defis de demain. Nous optimisons les processus existants et trouvons des solutions innovantes. Nous co-creons de maniere agile et pragmatique avec nos collegues et nos partenaires pour aider nos clients a se demarquer sur leur marche.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Responsabilite sociale&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Pour nous, tout tourne autour des personnes. Nous accueillons et valorisons les differences individuelles. Nous promouvons la diversite. Nous investissons dans des programmes d'education et des partenariats sociaux. Nous sommes guides par notre engagement envers le developpement durable.&lt;/p&gt;</value>
+  </data>
+  <data name="COMPANY_VALUES_TITLE" xml:space="preserve">
+    <value>Notre Valeurs</value>
+  </data>
+  <data name="COMPANY_VISION_DESCRIPTION" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Vision&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Dans les marches locaux et les domaines dans lesquels nous sommes actifs, nous visons a etre la reference en matiere de solutions integrees qui soutiennent l'ensemble du cycle de vie des TIC.&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;Reference : le choix preferentiel et fiable pour les clients, les partenaires et les employes&lt;/li&gt;
+	&lt;li&gt;Local : proximite avec nos clients en Benelux&lt;/li&gt;
+	&lt;li&gt;Solutions integrees : une offre complete de TIC couvrant l'ensemble du cycle de vie, y compris l'infrastructure, les applications et la communication&lt;/li&gt;
+	&lt;li&gt;Cycle de vie complet des TIC : soutien a toutes les activites de planification, de construction et de gestion (conception, deploiement, maintenance)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Mission&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Nous faisons fonctionner les TIC pour votre entreprise, rendons l'informatique plus humaine&lt;/p&gt;</value>
+  </data>
+  <data name="COMPANY_VISION_TITLE" xml:space="preserve">
+    <value>Notre Vision &amp; Mission</value>
+  </data>
+  <data name="confirmDeleteMessage" xml:space="preserve">
+    <value>Etes-vous sûr d'effacer?</value>
+  </data>
+  <data name="contentLabel" xml:space="preserve">
+    <value>Contenu</value>
+  </data>
+  <data name="currentCountOfStudentsErrorMessage" xml:space="preserve">
+    <value>Saisir un nombre positif</value>
+  </data>
+  <data name="currentCountOfStudentsLabel" xml:space="preserve">
+    <value>Nombre d'etudiants qui effectueront ce stage</value>
+  </data>
+  <data name="delete" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="deleteButton" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="department" xml:space="preserve">
+    <value>Departement</value>
+  </data>
+  <data name="departmentNameEmptyErrorMessage" xml:space="preserve">
+    <value>Le nom du departement est obligatoire</value>
+  </data>
+  <data name="departmentNameExportOptionsErrorMessage" xml:space="preserve">
+    <value>Le departement est tenu</value>
+  </data>
+  <data name="departmentNameLabel" xml:space="preserve">
+    <value>Departement</value>
+  </data>
+  <data name="departments" xml:space="preserve">
+    <value>Departements</value>
+  </data>
+  <data name="descriptionLabel" xml:space="preserve">
+    <value>Description de la mission de stage</value>
+  </data>
+  <data name="descriptionLabelErrorMessage" xml:space="preserve">
+    <value>Le formulaire ne peut pas être vide ou dépasser 1000 caractères.</value>
+  </data>
+  <data name="editButton" xml:space="preserve">
+    <value>Editer</value>
+  </data>
+  <data name="En" xml:space="preserve">
+    <value>L'anglais</value>
+  </data>
+  <data name="events" xml:space="preserve">
+    <value>Evenements</value>
+  </data>
+  <data name="fieldRequiredErrorMessage" xml:space="preserve">
+    <value>Ceci est obligatoire</value>
+  </data>
+  <data name="exportButton" xml:space="preserve">
+    <value>L'exportation</value>
+  </data>
+  <data name="exportPopupHeader" xml:space="preserve">
+    <value>Stages a l'exportation</value>
+  </data>
+  <data name="Fr" xml:space="preserve">
+    <value>Français</value>
+  </data>
+  <data name="FreeUsedPlacesLabel" xml:space="preserve">
+    <value>Nombre d'étudiants</value>
+  </data>
+  <data name="greaterThanMaxStudentsErrorMessage" xml:space="preserve">
+    <value>Le nombre d'etudiants participant au stage ne doit pas depasser le nombre maximum autorise.</value>
+  </data>
+  <data name="GreaterThanParamLimitError" xml:space="preserve">
+    <value>Vous devez saisir un nombre compris entre 0 et 15.</value>
+  </data>
+  <data name="internship" xml:space="preserve">
+    <value>Stage</value>
+  </data>
+  <data name="internshipNameColumnLabel" xml:space="preserve">
+    <value>Le nom de l'assignation</value>
+  </data>
+  <data name="internships" xml:space="preserve">
+    <value>Stages</value>
+  </data>
+  <data name="INTERNSHIP_ASSIGNMENT_TITLE" xml:space="preserve">
+    <value>Description de la mission de stage</value>
+  </data>
+  <data name="INTERNSHIP_COMMENTS_TITLE" xml:space="preserve">
+    <value>Informations complementaires concernant la mission de stage</value>
+  </data>
+  <data name="INTERNSHIP_KNOWLEDGE_DESCRIPTION" xml:space="preserve">
+    <value>Liste technique et non technique des connaissances et competences que le stagiaire acquerra pendant le stage</value>
+  </data>
+  <data name="INTERNSHIP_KNOWLEDGE_TITLE" xml:space="preserve">
+    <value>Quelles connaissances et competences acquerez-vous pendant la mission</value>
+  </data>
+  <data name="INTERNSHIP_LANGUAGE_TITLE" xml:space="preserve">
+    <value>Offre de stage disponible dans ces langues</value>
+  </data>
+  <data name="INTERNSHIP_LOCATION_DESCRIPTION" xml:space="preserve">
+    <value>La mission peut avoir lieu aux emplacements suivants:</value>
+  </data>
+  <data name="INTERNSHIP_LOCATION_TITLE" xml:space="preserve">
+    <value>Lieux de stage</value>
+  </data>
+  <data name="INTERNSHIP_NEED_TO_KNOW_DESCRIPTION" xml:space="preserve">
+    <value>Liste technique et non technique des connaissances et competences que le stagiaire doit au moins avoir pour mener a bien la mission</value>
+  </data>
+  <data name="INTERNSHIP_NEED_TO_KNOW_TITLE" xml:space="preserve">
+    <value>Quelles connaissances et compétences devez-vous avoir pour cette mission </value>
+  </data>
+  <data name="knowledgeToDevelopLabel" xml:space="preserve">
+    <value>Quelles connaissances acquerez-vous pendant la mission</value>
+  </data>
+  <data name="knowledgeToDevelopLabelErrorMessage" xml:space="preserve">
+    <value>Le formulaire ne peut pas être vide ou dépasser 1000 caractères.</value>
+  </data>
+  <data name="language" xml:space="preserve">
+    <value>Langue</value>
+  </data>
+  <data name="languageCodeLabel" xml:space="preserve">
+    <value>Code langue</value>
+  </data>
+  <data name="languageCodeRequiredErrorMessage" xml:space="preserve">
+    <value>Le code langue est requis</value>
+  </data>
+  <data name="languageLabel" xml:space="preserve">
+    <value>Langue</value>
+  </data>
+  <data name="languageNameLabel" xml:space="preserve">
+    <value>La langue</value>
+  </data>
+  <data name="languageNameRequiredErrorMessage" xml:space="preserve">
+    <value>Le nom de la langue est obligatoire</value>
+  </data>
+  <data name="locationCityLabel" xml:space="preserve">
+    <value>Nouvel emplacement</value>
+  </data>
+  <data name="locationFieldEmptyMessage" xml:space="preserve">
+    <value>Selectionnez un lieu, s'il vous plaît</value>
+  </data>
+  <data name="locationFieldLabel" xml:space="preserve">
+    <value>Localisation</value>
+  </data>
+  <data name="locationHouseNumberLabel" xml:space="preserve">
+    <value>Du numero de maison</value>
+  </data>
+  <data name="locationLabel" xml:space="preserve">
+    <value>Emplacement</value>
+  </data>
+  <data name="locations" xml:space="preserve">
+    <value>Localisation des sites</value>
+  </data>
+  <data name="locationStreetNameLabel" xml:space="preserve">
+    <value>La rue</value>
+  </data>
+  <data name="locationStreetRequiredErrorMessage" xml:space="preserve">
+    <value>Le nom de la rue de l'emplacement est requis</value>
+  </data>
+  <data name="locationZipCodeLabel" xml:space="preserve">
+    <value>Ccode postal</value>
+  </data>
+  <data name="locationZipCodeRequiredErrorMessage" xml:space="preserve">
+    <value>Le code postal de la localite est requis</value>
+  </data>
+  <data name="managerEmail" xml:space="preserve">
+    <value>Courriel du directeur</value>
+  </data>
+  <data name="managerEmailsLabel" xml:space="preserve">
+    <value>Le courriel des responsables</value>
+  </data>
+  <data name="Master" xml:space="preserve">
+    <value>Master</value>
+  </data>
+  <data name="MasterAfterBachelor" xml:space="preserve">
+    <value>Formation Master Apres Licence</value>
+  </data>
+  <data name="MasterAfterMaster" xml:space="preserve">
+    <value>Master Complementaire</value>
+  </data>
+  <data name="maxCountOfStudentsLabel" xml:space="preserve">
+    <value>Nombre maximum d'etudiants autorises</value>
+  </data>
+  <data name="maxStudentsErrorMessage" xml:space="preserve">
+    <value>Saisir un nombre positif</value>
+  </data>
+  <data name="neededKnowledgeLabel" xml:space="preserve">
+    <value>Quelles connaissances devez-vous avoir pour cette mission</value>
+  </data>
+  <data name="neededKnowledgeLabelErrorMessage" xml:space="preserve">
+    <value>Entrer les connaissances necessaires pour ces stages, s'il vous plaît</value>
+  </data>
+  <data name="newInternShip" xml:space="preserve">
+    <value>Nouveau stage</value>
+  </data>
+  <data name="Nl" xml:space="preserve">
+    <value>Néerlandais</value>
+  </data>
+  <data name="saveButtonText" xml:space="preserve">
+    <value>Sauver</value>
+  </data>
+  <data name="schoolyearErrorMessage" xml:space="preserve">
+    <value>L'annee scolaire est obligatoire</value>
+  </data>
+  <data name="schoolYearLabel" xml:space="preserve">
+    <value>L'annee scolaire</value>
+  </data>
+  <data name="titleContentLabel" xml:space="preserve">
+    <value>Titre</value>
+  </data>
+  <data name="titleContentLabelErrorMessage" xml:space="preserve">
+    <value>Le nom du stage ne peut etre vide</value>
+  </data>
+  <data name="trainingTypeLabel" xml:space="preserve">
+    <value>Type de formation requise</value>
+  </data>
+  <data name="unitEmptyErrorMessage" xml:space="preserve">
+    <value>L'unite est requise</value>
+  </data>
+  <data name="unitNameLabel" xml:space="preserve">
+    <value>Departement</value>
+  </data>
+  <data name="TEMPLATE_TITLE" xml:space="preserve">
+    <value>Inetum-Realdolmen Livre de stage</value>
+  </data>
+  <data name="updateButtonText" xml:space="preserve">
+    <value>Mise a jour</value>
+  </data>
+  <data name="updateDepartmentHeader" xml:space="preserve">
+    <value>Departement de la mise a jour</value>
+  </data>
+  <data name="updateLanguageHeader" xml:space="preserve">
+    <value>Mettre a jour la langue</value>
+  </data>
+  <data name="updateLocationHeader" xml:space="preserve">
+    <value>Mettre a jour l'emplacement</value>
+  </data>
+  <data name="users" xml:space="preserve">
+    <value>Utilisateurs</value>
+  </data>
+  <data name="Hbo5" xml:space="preserve">
+    <value>Graduate</value>
+  </data>
+  <data name="PGCE" xml:space="preserve">
+    <value>Post graduate</value>
+  </data>
+  <data name="PHD" xml:space="preserve">
+    <value>Doctorat</value>
+  </data>
+  <data name="languageExport" xml:space="preserve">
+    <value>Sélectionne la langue pour laquelle il y a des stages disponibles dans cette langue</value>
+  </data>
+  <data name="titleContentTooltip" xml:space="preserve">
+    <value>Le nom du stage dans une langue spécifique</value>
+  </data>
+  <data name="emailLabel" xml:space="preserve">
+    <value>Courriel</value>
+  </data>
+  <data name="passwordLabel" xml:space="preserve">
+    <value>Mot de passe</value>
+  </data>
+  <data name="RequiredTrainingText" xml:space="preserve">
+    <value>Le diplome requis pour ce stage est le suivant :</value>
+  </data>
+  <data name="EmailRegistrationLabel" xml:space="preserve">
+    <value>Courriel</value>
+  </data>
+  <data name="PasswordRegistrationLabel" xml:space="preserve">
+    <value>Mot de passe</value>
+  </data>
+  <data name="RegistrationNavbarItem" xml:space="preserve">
+    <value>enregistrement</value>
+  </data>
+  <data name="SnackbarIntersnipCopyText" xml:space="preserve">
+    <value>Cela copie les stages sélectionnés pour l'année suivante.</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>version de la mission de stage</value>
+  </data>
+  <data name="SubmitPasswordRegistrationLabel" xml:space="preserve">
+    <value>Soumettre le mot de passe</value>
+  </data>
+</root>
